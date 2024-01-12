@@ -1,8 +1,17 @@
 class Solution:
-    # Time Complexity:  TBD
-    # Space Complexity: TBD
+    # Time Complexity:  O(n) - iterate through array, removing any negative prefix while computing sum.
+    # Space Complexity: O(1)
     def maxSubArray(self, nums: list[int]) -> int:
-        return 0
+        currentSum = 0
+        maxSubArraySum = nums[0]
+
+        for num in nums:
+            if currentSum < 0:
+                currentSum = 0
+            currentSum += num
+            maxSubArraySum = max(maxSubArraySum, currentSum)
+
+        return maxSubArraySum
 
 
 solution = Solution()
