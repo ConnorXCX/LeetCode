@@ -1,6 +1,20 @@
 class Solution:
+    # Time Complexity:  O(n) - scanning through given array once with two pointers.
+    # Space Complexity: O(1) - no extra space used, using pointers to track instead of other data structures.
     def maxProfit(self, prices: list[int]) -> int:
-        return 0
+        l, r = 0, 1  # left pointer = buy, right pointer = sell
+        maxProfit = 0
+
+        while r < len(prices):
+            # Check if profitable.
+            if prices[l] < prices[r]:
+                profit = prices[r] - prices[l]
+                maxProfit = max(maxProfit, profit)
+            else:
+                l = r
+            r += 1
+
+        return maxProfit
 
 
 solution = Solution()

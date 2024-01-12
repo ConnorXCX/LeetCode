@@ -1,4 +1,6 @@
 class Solution:
+    # Time Complexity:  O(n) - iterating through array once and adding to hash map on each iteration (constant time operation).
+    # Space Complexity: O(n) - could potentially add every value to hash map.
     def twoSum(self, nums: list[int], target: int) -> list[int]:
         prevMap = {}  # val : index
 
