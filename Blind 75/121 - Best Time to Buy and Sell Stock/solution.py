@@ -17,10 +17,19 @@ class Solution:
         return maxProfit
 
 
-solution = Solution()
+if __name__ == '__main__':
+    import unittest
 
-# Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
-print(solution.maxProfit([7, 1, 5, 3, 6, 4]))  # 5
+    f = Solution().maxProfit
 
-# In this case, no transactions are done and the max profit = 0.
-print(solution.maxProfit([7, 6, 4, 3, 1]))  # 0
+    class Test(unittest.TestCase):
+
+        def test_example_1(self):
+            # Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
+            self.assertEqual(f([7, 1, 5, 3, 6, 4]), 5)
+
+        def test_example_2(self):
+            # In this case, no transactions are done and the max profit = 0.
+            self.assertEqual(f([7, 6, 4, 3, 1]), 0)
+
+    unittest.main()

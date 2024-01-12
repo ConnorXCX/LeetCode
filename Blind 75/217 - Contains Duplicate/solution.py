@@ -15,10 +15,20 @@ class Solution:
         return False
 
 
-solution = Solution()
+if __name__ == '__main__':
+    import unittest
 
-print(solution.containsDuplicate([1, 2, 3, 1]))  # true
+    f = Solution().containsDuplicate
 
-print(solution.containsDuplicate([1, 2, 3, 4]))  # false
+    class Test(unittest.TestCase):
 
-print(solution.containsDuplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]))  # true
+        def test_example_1(self):
+            self.assertEqual(f([1, 2, 3, 1]), True)
+
+        def test_example_2(self):
+            self.assertEqual(f([1, 2, 3, 4]), False)
+
+        def test_example_3(self):
+            self.assertEqual(f([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]), True)
+
+    unittest.main()

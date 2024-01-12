@@ -14,13 +14,23 @@ class Solution:
         return maxSubArraySum
 
 
-solution = Solution()
+if __name__ == '__main__':
+    import unittest
 
-# The subarray [4,-1,2,1] has the largest sum 6.
-print(solution.maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]))  # 6
+    f = Solution().maxSubArray
 
-# The subarray [1] has the largest sum 1.
-print(solution.maxSubArray([1]))  # 1
+    class Test(unittest.TestCase):
 
-# The subarray [5,4,-1,7,8] has the largest sum 23.
-print(solution.maxSubArray([5, 4, -1, 7, 8]))  # 23
+        def test_example_1(self):
+            # The subarray [4,-1,2,1] has the largest sum 6.
+            self.assertEqual(f([-2, 1, -3, 4, -1, 2, 1, -5, 4]), 6)
+
+        def test_example_2(self):
+            # The subarray [1] has the largest sum 1.
+            self.assertEqual(f([1]), 1)
+
+        def test_example_3(self):
+            # The subarray [5,4,-1,7,8] has the largest sum 23.
+            self.assertEqual(f([5, 4, -1, 7, 8]), 23)
+
+    unittest.main()
