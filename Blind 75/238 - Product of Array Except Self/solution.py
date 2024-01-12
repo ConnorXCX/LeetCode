@@ -1,6 +1,6 @@
 class Solution:
     # Time Complexity:  O(n) - using output array to track prefix and postfix array computations.
-    # Space Complexity: O(1)
+    # Space Complexity: O(1) - no extra data structures required.
     def productExceptSelf(self, nums: list[int]) -> list[int]:
         prefix, postfix = 1, 1
         answer = [1] * (len(nums))

@@ -1,6 +1,6 @@
 class Solution:
     # Time Complexity:  O(n) - iterate through array, removing any negative prefix while computing sum.
-    # Space Complexity: O(1)
+    # Space Complexity: O(1) - no extra data structures required.
     def maxSubArray(self, nums: list[int]) -> int:
         currentSum = 0
         maxSubArraySum = nums[0]
