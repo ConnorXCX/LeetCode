@@ -3,5 +3,8 @@
   "python.analysis.autoImportCompletions": true,
   "cSpell.words": [
     "Leetcode"
-  ]
+  ],
+  "workbench.editorAssociations": {   
+        "*.md": "vscode.markdown.preview.editor",
+    }
 }

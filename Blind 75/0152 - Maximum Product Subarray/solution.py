@@ -6,10 +6,10 @@ class Solution:
         maxSubArrayProduct = max(nums)
 
         for num in nums:
-            tempMax = currentMax * num
-            tempMin = currentMin * num
-            currentMax = max(tempMax, tempMin, num)
-            currentMin = min(tempMax, tempMin, num)
+            previousMax = currentMax * num
+            previousMin = currentMin * num
+            currentMax = max(previousMax, previousMin, num)
+            currentMin = min(previousMax, previousMin, num)
             maxSubArrayProduct = max(maxSubArrayProduct, currentMax)
 
         return maxSubArrayProduct
