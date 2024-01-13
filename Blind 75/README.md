@@ -7,11 +7,11 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 **Array**
 
 1. Two Sum - 001
-2. Best Time to Buy and Sell Stock - 121
-3. Contains Duplicate - 217
-4. Product of Array Except Self - 238
-5. Maximum Subarray - 053
-6. Maximum Product Subarray - 152
+2. Best Time to Buy and Sell Stock - 0121
+3. Contains Duplicate - 0217
+4. Product of Array Except Self - 0238
+5. Maximum Subarray - 0053
+6. Maximum Product Subarray - 0152
 7. Find Minimum in Rotated Sorted Array
 8. Search in Rotated Sorted Array
 9. 3 Sum

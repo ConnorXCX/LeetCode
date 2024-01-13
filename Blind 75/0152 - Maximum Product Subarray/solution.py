@@ -3,16 +3,16 @@ class Solution:
     # Space Complexity: O(1) - no extra data structures required.
     def maxProduct(self, nums: list[int]) -> int:
         currentMin, currentMax = 1, 1
-        result = max(nums)
+        maxSubArrayProduct = max(nums)
 
         for num in nums:
             tempMax = currentMax * num
             tempMin = currentMin * num
             currentMax = max(tempMax, tempMin, num)
             currentMin = min(tempMax, tempMin, num)
-            result = max(result, currentMax)
+            maxSubArrayProduct = max(maxSubArrayProduct, currentMax)
 
-        return result
+        return maxSubArrayProduct
 
 
 if __name__ == '__main__':
