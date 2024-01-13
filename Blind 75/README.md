@@ -13,7 +13,7 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 5. Maximum Subarray - 0053
 6. Maximum Product Subarray - 0152
 7. Find Minimum in Rotated Sorted Array - 0153
-8. Search in Rotated Sorted Array
+8. Search in Rotated Sorted Array - 0033
 9. 3Sum
 10. Container With Most Water
 
