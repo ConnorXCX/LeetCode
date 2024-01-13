@@ -5,6 +5,7 @@ class Solution:
         currentMinimum = nums[0]
         l, r = 0, len(nums) - 1
 
+        # Implementation essentially involves a binary search algorithm.
         while l <= r:
             if nums[l] < nums[r]:
                 currentMinimum = min(currentMinimum, nums[l])
