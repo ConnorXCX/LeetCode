@@ -6,16 +6,16 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 
 **Array**
 
-1. Two Sum - 001
-2. Best Time to Buy and Sell Stock - 0121
-3. Contains Duplicate - 0217
-4. Product of Array Except Self - 0238
-5. Maximum Subarray - 0053
-6. Maximum Product Subarray - 0152
-7. Find Minimum in Rotated Sorted Array - 0153
-8. Search in Rotated Sorted Array - 0033
-9. 3Sum - 0015
-10. Container With Most Water - 0011
+1. Two Sum - 1
+2. Best Time to Buy and Sell Stock - 121
+3. Contains Duplicate - 217
+4. Product of Array Except Self - 238
+5. Maximum Subarray - 53
+6. Maximum Product Subarray - 152
+7. Find Minimum in Rotated Sorted Array - 153
+8. Search in Rotated Sorted Array - 33
+9. 3Sum - 15
+10. Container With Most Water - 11
 
 **Binary**
 
@@ -91,7 +91,7 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 
 1. Maximum Depth of Binary Tree
 2. Same Tree
-3. Invert/Flip Binary Tree
+3. Invert Binary Tree - 226
 4. Binary Tree Maximum Path Sum
 5. Binary Tree Level Order Traversal
 6. Serialize and Deserialize Binary Tree
