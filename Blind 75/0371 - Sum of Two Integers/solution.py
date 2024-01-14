@@ -2,7 +2,7 @@ class Solution:
     # Time Complexity:  O(1) - using constant time logical operators XOR and AND.
     # Space Complexity: O(1) - using constant time logical operators XOR and AND.
     def getSum(self, a: int, b: int) -> int:
-        # Need for Python due to how Python represents size in Bits (much larger).
+        # Need for Python due to how Python represents size in Bits (much larger). Reference video linked in README for more detail.
         bitShortener = 0xffffffff
 
         while (b & bitShortener):
