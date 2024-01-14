@@ -13,6 +13,8 @@ class TreeNode:
 # Space Complexity: TBD
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        # Depth-first Search implementation; preorder or postorder does not matter.
+
         if not root:
             return None
 
