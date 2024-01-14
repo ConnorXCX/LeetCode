@@ -34,13 +34,13 @@ if __name__ == '__main__':
 
     class Test(unittest.TestCase):
 
-        def example_1(self):
+        def test_example_1(self):
             self.assertEqual(f([4, 5, 6, 7, 0, 1, 2], 0), 4)
 
-        def example_2(self):
+        def test_example_2(self):
             self.assertEqual(f([4, 5, 6, 7, 0, 1, 2], 3), -1)
 
-        def example_3(self):
+        def test_example_3(self):
             self.assertEqual(f([1], 0), -1)
 
     unittest.main()

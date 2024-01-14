@@ -20,14 +20,14 @@ if __name__ == '__main__':
 
     class Test(unittest.TestCase):
 
-        def example_1(self):
+        def test_example_1(self):
             # Because nums[0] + nums[1] == 9, we return [0, 1].
             self.assertEqual(f([2, 7, 11, 15], 9), [0, 1])
 
-        def example_2(self):
+        def test_example_2(self):
             self.assertEqual(f([3, 2, 4], 6), [1, 2])
 
-        def example_3(self):
+        def test_example_3(self):
             self.assertEqual(f([3, 3], 6), [0, 1])
 
     unittest.main()

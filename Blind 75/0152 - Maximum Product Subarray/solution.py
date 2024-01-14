@@ -22,10 +22,10 @@ if __name__ == '__main__':
 
     class Test(unittest.TestCase):
 
-        def example_1(self):
+        def test_example_1(self):
             self.assertEqual(f([2, 3, -2, 4]), 6)
 
-        def example_2(self):
+        def test_example_2(self):
             self.assertEqual(f([-2, 0, -1]), 0)
 
     unittest.main()

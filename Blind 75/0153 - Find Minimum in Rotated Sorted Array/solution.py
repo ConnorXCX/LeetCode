@@ -29,15 +29,15 @@ if __name__ == '__main__':
 
     class Test(unittest.TestCase):
 
-        def example_1(self):
+        def test_example_1(self):
             # The original array was [1,2,3,4,5] rotated 3 times.
             self.assertEqual(f([3, 4, 5, 1, 2]), 1)
 
-        def example_2(self):
+        def test_example_2(self):
             # The original array was [0,1,2,4,5,6,7] and it was rotated 4 times.
             self.assertEqual(f([4, 5, 6, 7, 0, 1, 2]), 0)
 
-        def example_3(self):
+        def test_example_3(self):
             # The original array was [11,13,15,17] and it was rotated 4 times.
             self.assertEqual(f([11, 13, 15, 17]), 11)
 

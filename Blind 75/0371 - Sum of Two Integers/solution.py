@@ -12,10 +12,10 @@ if __name__ == '__main__':
 
     class Test(unittest.TestCase):
 
-        def example_1(self):
+        def test_example_1(self):
             self.assertEqual(f(1, 2), 3)
 
-        def example_2(self):
+        def test_example_2(self):
             self.assertEqual(f(2, 3), 5)
 
     unittest.main()
