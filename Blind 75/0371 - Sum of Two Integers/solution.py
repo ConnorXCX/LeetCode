@@ -5,7 +5,7 @@ class Solution:
         # Need for Python due to how Python represents size in Bits (much larger).
         bitShortener = 0xffffffff
 
-        while (b & bitShortener) != 0:
+        while (b & bitShortener):
             carry = (a & b) << 1
             a = (a ^ b)
             b = carry
