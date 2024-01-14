@@ -1,8 +1,24 @@
 class Solution:
-    # Time Complexity:  TBD
-    # Space Complexity: TBD
+    # Time Complexity:  O(1) - input is always a binary string of length 32, translating to a 32 Bit Integer; therefore, iterating through loop constant number of times, not scaling up.
+    # Space Complexity: O(1) - input is always a binary string of length 32, translating to a 32 Bit Integer; therefore, iterating through loop constant number of times, not scaling up.
     def hammingWeight(self, n: int) -> int:
-        pass
+        # hammingWeight = 0
+
+        # while n:
+        #     hammingWeight += n % 2
+        #     # Bitwise right shift by 1.
+        #     n = n >> 1
+
+        # return hammingWeight
+
+        # Slightly optimized solution that skips 0's. Reference video linked in README for more detail.
+        hammingWeight = 0
+
+        while n:
+            n &= (n - 1)
+            hammingWeight += 1
+
+        return hammingWeight
 
 
 if __name__ == '__main__':
@@ -14,14 +30,14 @@ if __name__ == '__main__':
 
         def test_example_1(self):
             # The input binary string 00000000000000000000000000001011 has a total of three '1' bits.
-            self.assertEqual(f(00000000000000000000000000001011), 3)
+            self.assertEqual(f(int('00000000000000000000000000001011', 2)), 3)
 
         def test_example_2(self):
             # The input binary string 00000000000000000000000010000000 has a total of one '1' bit.
-            self.assertEqual(f(00000000000000000000000010000000), 1)
+            self.assertEqual(f(int('00000000000000000000000010000000', 2)), 1)
 
         def test_example_3(self):
             # The input binary string 11111111111111111111111111111101 has a total of thirty one '1' bits.
-            self.assertEqual(f(11111111111111111111111111111101), 31)
+            self.assertEqual(f(int('11111111111111111111111111111101', 2)), 31)
 
     unittest.main()
