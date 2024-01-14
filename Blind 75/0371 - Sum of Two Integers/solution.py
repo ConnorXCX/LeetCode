@@ -10,7 +10,7 @@ class Solution:
             a = (a ^ b)
             b = carry
 
-        return (a & bitShortener)
+        return (a & bitShortener) if b > 0 else a
 
 
 if __name__ == '__main__':
