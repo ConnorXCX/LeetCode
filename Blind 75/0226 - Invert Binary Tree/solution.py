@@ -1,8 +1,7 @@
 from typing import Optional
 
+
 # Definition for a binary tree node.
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -29,9 +28,8 @@ class Solution:
 
         return root
 
+
 # Function to get level order traversal of tree.
-
-
 def getLevelOrder(root: Optional[TreeNode]) -> list[int]:
     if root and root.val == 0 and root.left is None and root.right is None:
         return []
