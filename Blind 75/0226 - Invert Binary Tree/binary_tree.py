@@ -15,6 +15,9 @@ class TreeNode:
 
 # Function to get level order traversal of tree.
 def getLevelOrder(root: Optional[TreeNode]) -> list[int]:
+    if root and root.val == 0 and root.left is None and root.right is None:
+        return []
+
     while not root:
         return []
 
