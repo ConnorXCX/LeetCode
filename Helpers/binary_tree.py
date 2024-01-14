@@ -1,12 +1,11 @@
+from typing import Optional
+
 # Recursive Python program for level
 # order traversal of Binary Tree
 # Source: https://www.geeksforgeeks.org/level-order-tree-traversal/
 
 
 # Definition for a binary tree node.
-from typing import Optional
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -15,22 +14,32 @@ class TreeNode:
 
 
 # Function to get level order traversal of tree.
-def getLevelOrder(root: Optional[TreeNode]) -> list[int]:
+def getLevelOrder(root: Optional[TreeNode]):
+    levels = []
     h = height(root)
 
     for i in range(1, h+1):
-        getCurrentLevel(root, i)
+        levels.append(getCurrentLevel(root, i))
+
+    return levels
 
 
 # Get nodes at a current level
-def getCurrentLevel(root: Optional[TreeNode], level: int) -> list[int]:
+def getCurrentLevel(root: Optional[TreeNode], level: int):
     if root is None:
-        return []
+        return
     if level == 1:
-        print(root.val, end=' ')
+        # levels.append(root.val)
+        return root.val
     elif level > 1:
-        getCurrentLevel(root.left, level - 1)
-        getCurrentLevel(root.right, level - 1)
+        leftLevel = getCurrentLevel(root.left, level - 1)
+        if leftLevel is not None:
+            # levels.append(leftLevel)
+            return leftLevel
+        rightLevel = getCurrentLevel(root.right, level - 1)
+        if rightLevel is not None:
+            # levels.append(rightLevel)
+            return rightLevel
 
 
 # Compute the height of a tree - the number of nodes along the longest path from the root node down to the farthest leaf node.
@@ -56,4 +65,4 @@ if __name__ == '__main__':
     root.left.left = TreeNode(4)
     root.left.right = TreeNode(5)
 
-    getLevelOrder(root)
+    print(getLevelOrder(root))
