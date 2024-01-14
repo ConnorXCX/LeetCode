@@ -14,32 +14,26 @@ class TreeNode:
 
 
 # Function to get level order traversal of tree.
-def getLevelOrder(root: Optional[TreeNode]):
-    levels = []
-    h = height(root)
+def getLevelOrder(root: Optional[TreeNode]) -> list[int]:
+    while not root:
+        return []
 
-    for i in range(1, h+1):
-        levels.append(getCurrentLevel(root, i))
+    queue = [root]
+    result = []
 
-    return levels
+    while queue:
+        level_nodes = []
+        temp = []
+        for node in queue:
+            level_nodes.append(node.val)
+            if node.left:
+                temp.append(node.left)
+            if node.right:
+                temp.append(node.right)
+        queue = temp
+        result.append(level_nodes)
 
-
-# Get nodes at a current level.
-def getCurrentLevel(root: Optional[TreeNode], level: int):
-    if root is None:
-        return
-    if level == 1:
-        # levels.append(root.val)
-        return root.val
-    elif level > 1:
-        leftLevel = getCurrentLevel(root.left, level - 1)
-        if leftLevel is not None:
-            # levels.append(leftLevel)
-            return leftLevel
-        rightLevel = getCurrentLevel(root.right, level - 1)
-        if rightLevel is not None:
-            # levels.append(rightLevel)
-            return rightLevel
+    return [item for items in result for item in items]
 
 
 # Compute the height of a tree - the number of nodes along the longest path from the root node down to the farthest leaf node.
