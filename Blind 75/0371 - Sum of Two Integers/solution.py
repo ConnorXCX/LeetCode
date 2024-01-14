@@ -1,24 +1,21 @@
 class Solution:
     # Time Complexity:  TBD
     # Space Complexity: TBD
-    def solution(self) -> None:
+    def getSum(self, a: int, b: int) -> int:
         pass
 
 
 if __name__ == '__main__':
     import unittest
 
-    f = Solution().solution
+    f = Solution().getSum
 
     class Test(unittest.TestCase):
 
         def example_1(self):
-            self.assertEqual(f(), None)
+            self.assertEqual(f(1, 2), 3)
 
         def example_2(self):
-            self.assertEqual(f(), None)
-
-        def example_3(self):
-            self.assertEqual(f(), None)
+            self.assertEqual(f(2, 3), 5)
 
     unittest.main()

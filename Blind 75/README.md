@@ -19,11 +19,11 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 
 **Binary**
 
-1. Sum of Two Integers
-2. Number of 1 Bits
-3. Counting Bits
-4. Missing Number
-5. Reverse Bits
+1. Sum of Two Integers - 0371
+2. Number of 1 Bits - 0191
+3. Counting Bits - 0338
+4. Missing Number - 0268
+5. Reverse Bits - 0190
 
 **Dynamic Programming**
 
