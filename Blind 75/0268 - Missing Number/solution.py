@@ -1,8 +1,13 @@
 class Solution:
-    # Time Complexity:  TBD
-    # Space Complexity: TBD
+    # Time Complexity:  O(n) - iterating through given array and array of n to apply constant time logical operator XOR.
+    # Space Complexity: O(1) - no extra data structures required.
     def missingNumber(self, nums: list[int]) -> int:
-        pass
+        result = len(nums)
+
+        for i in range(len(nums)):
+            result += (i - nums[i])
+
+        return result
 
 
 if __name__ == '__main__':
