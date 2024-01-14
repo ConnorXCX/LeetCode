@@ -24,7 +24,7 @@ def getLevelOrder(root: Optional[TreeNode]):
     return levels
 
 
-# Get nodes at a current level
+# Get nodes at a current level.
 def getCurrentLevel(root: Optional[TreeNode], level: int):
     if root is None:
         return
