@@ -1,5 +1,5 @@
 class Solution:
-    # Time Complexity:  O(n) - iterating through given array and array of n to apply constant time logical operator XOR.
+    # Time Complexity:  O(n) - iterating through given array.
     # Space Complexity: O(1) - no extra data structures required.
     def missingNumber(self, nums: list[int]) -> int:
         result = len(nums)
