@@ -116,3 +116,4 @@ References:
 
 1. [Blind 75 LeetCode Questions](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions)
 2. [LeetCode BLIND-75 Solutions](https://youtube.com/playlist?list=PLot-Xpze53ldVwtstag2TL4HQhAnC8ATf&si=voYfyCjt6oXgk7J8)
+3. [14 Patterns to Ace Any Coding Interview Question](https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed)
