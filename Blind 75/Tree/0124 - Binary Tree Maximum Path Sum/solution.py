@@ -1,14 +1,17 @@
+from typing import Optional
+
+
 class Solution:
     # Time Complexity:  TBD
     # Space Complexity: TBD
-    def solution(self) -> None:
+    def maxPathSum(self, root: Optional[TreeNode]) -> int:
         pass
 
 
 if __name__ == '__main__':
     import unittest
 
-    f = Solution().solution
+    f = Solution().maxPathSum
 
     class Test(unittest.TestCase):
 
