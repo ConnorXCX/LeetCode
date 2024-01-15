@@ -1,3 +1,4 @@
+from collections import deque
 from typing import Optional
 
 
@@ -10,10 +11,50 @@ class TreeNode:
 
 
 class Solution:
-    # Time Complexity:  TBD
-    # Space Complexity: TBD
+    # Time Complexity:  O(n) - traversing through entire tree.
+    # Space Complexity: O(h) - height of tree; worst case O(n) if not a balanced Binary Tree.
     def maxDepth(self, root: Optional[TreeNode]) -> int:
-        pass
+        # Solution 1: Recursive DFS
+        if not root:
+            return 0
+
+        return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
+
+        # Solution 2: Iterative Pre-order DFS
+        # stack = [[root, 1]]
+        # currentMaxDepth = 0
+
+        # while stack:
+        #     node, depth = stack.pop()
+
+        #     if node:
+        #         currentMaxDepth = max(currentMaxDepth, depth)
+        #         # Add children of current node to stack, including their depth.
+        #         stack.append([node.left, depth + 1])
+        #         stack.append([node.right, depth + 1])
+
+        # return currentMaxDepth
+
+        # Solution 3: Iterative BFS
+        # if not root:
+        #     return 0
+
+        # levels = 0
+        # q = deque([root])
+        # while q:
+        #     # Traverse level and replace parents with children, or replace current level with next level.
+        #     for i in range(len(q)):
+        #         node = q.popleft()
+
+        #         if node.left:
+        #             q.append(node.left)
+
+        #         if node.right:
+        #             q.append(node.right)
+
+        #     levels += 1
+
+        # return levels
 
 
 if __name__ == '__main__':
