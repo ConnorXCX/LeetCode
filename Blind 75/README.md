@@ -6,24 +6,24 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 
 **Array**
 
-1. ✅ Two Sum - 1
-2. ✅ Best Time to Buy and Sell Stock - 121
-3. ✅ Contains Duplicate - 217
-4. ✅ Product of Array Except Self - 238
-5. ✅ Maximum Subarray - 53
-6. ✅ Maximum Product Subarray - 152
-7. ✅ Find Minimum in Rotated Sorted Array - 153
-8. ✅ Search in Rotated Sorted Array - 33
-9. ✅ 3Sum - 15
-10. ✅ Container With Most Water - 11
+1. ✅ Two Sum
+2. ✅ Best Time to Buy and Sell Stock
+3. ✅ Contains Duplicate
+4. ✅ Product of Array Except Self
+5. ✅ Maximum Subarray
+6. ✅ Maximum Product Subarray
+7. ✅ Find Minimum in Rotated Sorted Array
+8. ✅ Search in Rotated Sorted Array
+9. ✅ 3Sum
+10. ✅ Container With Most Water
 
 **Binary**
 
-1. ✅ Sum of Two Integers - 0371
-2. ✅ Number of 1 Bits - 0191
-3. ✅ Counting Bits - 0338
-4. ✅ Missing Number - 0268
-5. ✅ Reverse Bits - 0190
+1. ✅ Sum of Two Integers
+2. ✅ Number of 1 Bits
+3. ✅ Counting Bits
+4. ✅ Missing Number
+5. ✅ Reverse Bits
 
 **Dynamic Programming**
 
@@ -89,9 +89,9 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 
 **Tree**
 
-1. ✅ Maximum Depth of Binary Tree - 104
-2. ✅ Same Tree - 100
-3. ✅ Invert Binary Tree - 226
+1. ✅ Maximum Depth of Binary Tree
+2. ✅ Same Tree
+3. ✅ Invert Binary Tree
 4. Binary Tree Maximum Path Sum
 5. Binary Tree Level Order Traversal
 6. Serialize and Deserialize Binary Tree
