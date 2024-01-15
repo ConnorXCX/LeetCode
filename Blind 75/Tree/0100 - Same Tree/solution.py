@@ -10,10 +10,21 @@ class TreeNode:
 
 
 class Solution:
-    # Time Complexity:  TBD
+    # Time Complexity:  O(p + q) - iterating through every node.
     # Space Complexity: TBD
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
-        pass
+        # DFS recursion implementation..
+
+        # Both are empty trees.
+        if not p and not q:
+            return True
+
+        # One empty tree; Not the same tree OR both are non-empty trees.
+        if not p or not q or p.val != q.val:
+            return False
+
+        return (self.isSameTree(p.left, q.left) and
+                self.isSameTree(p.right, q.right))
 
 
 if __name__ == '__main__':
@@ -50,14 +61,19 @@ if __name__ == '__main__':
 
         def test_example_1(self):
             # p = [1,2,3], q = [1,2,3]
-            self.assertEqual(f(), True)
+            tree = TreeNode(1, TreeNode(2), TreeNode(3))
+            self.assertEqual(f(tree, tree), True)
 
         def test_example_2(self):
             # p = [1,2], q = [1,null,2]
-            self.assertEqual(f(), False)
+            p = TreeNode(1, TreeNode(2), None)
+            q = TreeNode(1, None, TreeNode(2))
+            self.assertEqual(f(p, q), False)
 
         def test_example_3(self):
             # p = [1,2,1], q = [1,1,2]
-            self.assertEqual(f(), False)
+            p = TreeNode(1, TreeNode(2), TreeNode(1))
+            q = TreeNode(1, TreeNode(1), TreeNode(2))
+            self.assertEqual(f(p, q), False)
 
     unittest.main()

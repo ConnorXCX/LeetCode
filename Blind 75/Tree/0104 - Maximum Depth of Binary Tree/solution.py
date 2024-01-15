@@ -50,10 +50,11 @@ if __name__ == '__main__':
 
         def test_example_1(self):
             # [3,9,20,null,null,15,7]
-            self.assertEqual(f(), 3)
+            self.assertEqual(
+                f(TreeNode(3, TreeNode(9), TreeNode(20, TreeNode(15), TreeNode(7)))), 3)
 
         def test_example_2(self):
             # [1,null,2]
-            self.assertEqual(f(), 2)
+            self.assertEqual(f(TreeNode(1, None, TreeNode(2))), 2)
 
     unittest.main()

@@ -89,8 +89,8 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 
 **Tree**
 
-1. Maximum Depth of Binary Tree
-2. Same Tree
+1. Maximum Depth of Binary Tree - 104
+2. Same Tree - 100
 3. Invert Binary Tree - 226
 4. Binary Tree Maximum Path Sum
 5. Binary Tree Level Order Traversal
