@@ -5,3 +5,13 @@ A path in a binary tree is a sequence of nodes where each pair of adjacent nodes
 The path sum of a path is the sum of the node's values in the path.
 
 Given the root of a binary tree, return the maximum path sum of any non-empty path.
+
+---
+
+##### Example 1 Visualization
+
+![Example 1 Visualization](ex1.jpg "Example 1 Visualization")
+
+##### Example 2 Visualization
+
+![Example 2 Visualization](ex2.jpg "Example 2 Visualization")
