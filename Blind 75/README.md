@@ -92,23 +92,23 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 1. ✅ Maximum Depth of Binary Tree
 2. ✅ Same Tree
 3. ✅ Invert Binary Tree
-4. Binary Tree Maximum Path Sum
-5. Binary Tree Level Order Traversal
-6. Serialize and Deserialize Binary Tree
-7. Subtree of Another Tree
-8. Construct Binary Tree from Preorder and Inorder Traversal
-9. Validate Binary Search Tree
-10. Kth Smallest Element in a BST
-11. Lowest Common Ancestor of BST
-12. Implement Trie (Prefix Tree)
-13. Add and Search Word
-14. Word Search II
+4. 🛑 Binary Tree Maximum Path Sum
+5. 🛑 Binary Tree Level Order Traversal
+6. 🛑 Serialize and Deserialize Binary Tree
+7. 🛑 Subtree of Another Tree
+8. 🛑 Construct Binary Tree from Preorder and Inorder Traversal
+9. 🛑 Validate Binary Search Tree
+10. 🛑 Kth Smallest Element in a BST
+11. 🛑 Lowest Common Ancestor of a Binary Search Tree
+12. 🛑 Implement Trie (Prefix Tree)
+13. 🛑 Design Add and Search Words Data Structure
+14. 🛑 Word Search II
 
 **Heap**
 
-1. Merge K Sorted Lists
-2. Top K Frequent Elements
-3. Find Median from Data Stream
+1. 🛑 Merge K Sorted Lists
+2. 🛑 Top K Frequent Elements
+3. 🛑 Find Median from Data Stream
 
 ---
 
