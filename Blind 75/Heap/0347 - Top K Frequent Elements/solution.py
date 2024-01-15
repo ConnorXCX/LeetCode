@@ -18,7 +18,13 @@ class Solution:
             for number in frequency[i]:
                 result.append(number)
 
-        return result[:k]
+                if len(result) == k:
+                    break
+
+            if len(result) == k:
+                break
+
+        return result
 
 
 if __name__ == '__main__':
