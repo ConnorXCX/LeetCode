@@ -107,7 +107,7 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 **Heap**
 
 1. 🛑 Merge K Sorted Lists
-2. 🛑 Top K Frequent Elements
+2. ✅ Top K Frequent Elements
 3. 🛑 Find Median from Data Stream
 
 ---
