@@ -1,3 +1,3 @@
 # Top K Frequent Elements
 
-Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+Given an integer array `nums` and an integer `k`, return _the_ `k` _most frequent elements_. You may return the answer in **any order**.
