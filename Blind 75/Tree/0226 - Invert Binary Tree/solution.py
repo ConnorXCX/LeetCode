@@ -1,5 +1,5 @@
 from typing import Optional
-from ....Helpers.Python.binary_tree import TreeNode, getLevelOrder
+from binary_tree import TreeNode, getLevelOrder
 
 
 # # Definition for a binary tree node.
