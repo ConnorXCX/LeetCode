@@ -62,8 +62,8 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 
 1. 🔴 Reverse a Linked List
 2. 🔴 Detect Cycle in a Linked List
-3. 🔴 Merge Two Sorted Lists
-4. 🔴 Merge K Sorted Lists
+3. ✅ Merge Two Sorted Lists
+4. ✅ Merge K Sorted Lists
 5. 🔴 Remove Nth Node From End Of List
 6. 🔴 Reorder List
 
@@ -106,7 +106,7 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 
 **Heap**
 
-1. 🟡 Merge K Sorted Lists
+1. ✅ Merge K Sorted Lists (Repeat, in Linked List)
 2. ✅ Top K Frequent Elements
 3. ✅ Find Median from Data Stream
 
