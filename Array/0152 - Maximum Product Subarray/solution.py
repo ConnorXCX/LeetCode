@@ -1,7 +1,10 @@
+from typing import List
+
+
 class Solution:
     # Time Complexity:  O(n) - iterating through given array once.
     # Space Complexity: O(1) - no extra data structures required.
-    def maxProduct(self, nums: list[int]) -> int:
+    def maxProduct(self, nums: List[int]) -> int:
         currentMin, currentMax = 1, 1
         maxSubArrayProduct = max(nums)
 

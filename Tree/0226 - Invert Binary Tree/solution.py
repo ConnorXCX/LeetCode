@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import List, Optional
 
 
 # Definition for a binary tree node.
@@ -35,7 +35,7 @@ if __name__ == '__main__':
     f = Solution().invertTree
 
     # Function to get level order traversal of tree.
-    def getLevelOrder(root: Optional[TreeNode]) -> list[int]:
+    def getLevelOrder(root: Optional[TreeNode]) -> List[int]:
         if root and root.val == 0 and root.left is None and root.right is None:
             return []
 

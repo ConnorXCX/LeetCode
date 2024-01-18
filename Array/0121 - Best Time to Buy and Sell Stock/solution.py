@@ -1,7 +1,10 @@
+from typing import List
+
+
 class Solution:
     # Time Complexity:  O(n) - scanning through given array once with two pointers.
     # Space Complexity: O(1) - no extra space used, using pointers to track instead of other data structures.
-    def maxProfit(self, prices: list[int]) -> int:
+    def maxProfit(self, prices: List[int]) -> int:
         l, r = 0, 1  # left pointer = buy, right pointer = sell
         maxProfit = 0
 

@@ -1,7 +1,10 @@
+from typing import List
+
+
 class Solution:
     # Time Complexity:  O(n) - iterating n times.
     # Space Complexity: O(n) - iterating n times.
-    def countBits(self, n: int) -> list[int]:
+    def countBits(self, n: int) -> List[int]:
         # ans = [0] * (n + 1)
         # offset = 1
 

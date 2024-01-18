@@ -1,7 +1,10 @@
+from typing import List
+
+
 class Solution:
     # Time Complexity:  O(nlogn) + O(n^2) -> O(n^2) - sorting array and then one loop to get initial value, and another loop to get essentially solve two sum.
     # Space Complexity: O(1) or O(n) depending on sorting implementation.
-    def threeSum(self, nums: list[int]) -> list[list[int]]:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
         triplets = []
         nums.sort()
 

@@ -1,7 +1,10 @@
+from typing import List
+
+
 class Solution:
     # Time Complexity:  O(n) - iterating through given array once.
     # Space Complexity: O(1) - no extra data structures required.
-    def maxArea(self, height: list[int]) -> int:
+    def maxArea(self, height: List[int]) -> int:
         # Brute force implementation.
         # maxArea = 0
 

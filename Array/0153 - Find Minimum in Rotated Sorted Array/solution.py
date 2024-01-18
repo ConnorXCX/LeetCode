@@ -1,7 +1,10 @@
+from typing import List
+
+
 class Solution:
     # Time Complexity:  O(logn) - required in problem statement.
     # Space Complexity: O(1) - no extra data structures required.
-    def findMin(self, nums: list[int]) -> int:
+    def findMin(self, nums: List[int]) -> int:
         currentMinimum = nums[0]
         l, r = 0, len(nums) - 1
 

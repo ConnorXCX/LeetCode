@@ -1,7 +1,10 @@
+from typing import List
+
+
 class Solution:
     # Time Complexity:  O(logn) - required in problem statement.
     # Space Complexity: O(1) - no extra data structures required.
-    def search(self, nums: list[int], target: int) -> int:
+    def search(self, nums: List[int], target: int) -> int:
         l, r = 0, len(nums) - 1
 
         # Implementation essentially involves a binary search algorithm.

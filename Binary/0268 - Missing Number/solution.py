@@ -1,7 +1,10 @@
+from typing import List
+
+
 class Solution:
     # Time Complexity:  O(n) - iterating through given array.
     # Space Complexity: O(1) - no extra data structures required.
-    def missingNumber(self, nums: list[int]) -> int:
+    def missingNumber(self, nums: List[int]) -> int:
         result = len(nums)
 
         for i in range(len(nums)):

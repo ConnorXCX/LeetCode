@@ -1,7 +1,10 @@
+from typing import List
+
+
 class Solution:
     # Time Complexity:  O(n) - iterating through given array once and then iterating backwards for Bucket Sort array.
     # Space Complexity: O(n) - HashMap to count occurrences of each value of given array.
-    def topKFrequent(self, nums: list[int], k: int) -> list[int]:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         # Bucket Sort implementation.
         countMap = {}
         frequency = [[] for i in range(len(nums) + 1)]
