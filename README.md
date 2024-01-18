@@ -94,7 +94,7 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 3. ✅ Invert Binary Tree
 4. ✅ Binary Tree Maximum Path Sum
 5. ✅ Binary Tree Level Order Traversal
-6. 🟡 Serialize and Deserialize Binary Tree
+6. ✅ Serialize and Deserialize Binary Tree
 7. 🟡 Subtree of Another Tree
 8. 🟡 Construct Binary Tree from Preorder and Inorder Traversal
 9. 🟡 Validate Binary Search Tree
