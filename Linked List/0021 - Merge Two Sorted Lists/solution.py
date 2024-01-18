@@ -44,25 +44,31 @@ if __name__ == '__main__':
             solutionList = []
             solutionListNodes = f(ListNode(1, ListNode(2, ListNode(4))), ListNode(1, ListNode(3, ListNode(
                 4))))
+
             while solutionListNodes:
                 solutionList.append(solutionListNodes.val)
                 solutionListNodes = solutionListNodes.next
+
             self.assertEqual(solutionList, [1, 1, 2, 3, 4, 4])
 
         def test_example_2(self):
             solutionList = []
-            solutionListNodes = f(ListNode().next, ListNode().next)
+            solutionListNodes = f(None, None)
+
             while solutionListNodes:
                 solutionList.append(solutionListNodes.val)
                 solutionListNodes = solutionListNodes.next
+
             self.assertEqual(solutionList, [])
 
         def test_example_3(self):
             solutionList = []
-            solutionListNodes = f(ListNode().next, ListNode(0))
+            solutionListNodes = f(None, ListNode(0))
+
             while solutionListNodes:
                 solutionList.append(solutionListNodes.val)
                 solutionListNodes = solutionListNodes.next
+
             self.assertEqual(solutionList, [0])
 
     unittest.main()
