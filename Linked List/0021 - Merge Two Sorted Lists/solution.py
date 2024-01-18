@@ -9,7 +9,7 @@ class ListNode:
 
 
 class Solution:
-    # Time Complexity: O(n + m) with n = number of nodes in list1 and  m = number of nodes in list2.
+    # Time Complexity: O(n + m) - n = number of nodes in list1 and  m = number of nodes in list2.
     # Space Complexity: O(1) - just shifting the pointers.
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
         initialNode = ListNode()
