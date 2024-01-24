@@ -69,10 +69,10 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 
 **Matrix**
 
-1. 🔴 Set Matrix Zeroes
-2. 🔴 Spiral Matrix
-3. 🔴 Rotate Image
-4. 🔴 Word Search
+1. 🟡 Set Matrix Zeroes
+2. 🟡 Spiral Matrix
+3. 🟡 Rotate Image
+4. 🟡 Word Search
 
 **String**
 
