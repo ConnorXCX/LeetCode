@@ -22,7 +22,7 @@ class Solution:
             previous = current
             current = next
 
-        # return previous
+        return previous
 
         # Recursive Implementation
         # Time Complexity:  O(n)
