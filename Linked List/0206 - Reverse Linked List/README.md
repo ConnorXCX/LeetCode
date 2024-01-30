@@ -2,6 +2,8 @@
 
 Given the `head` of a singly linked list, reverse the list, and return _the reversed list_.
 
+**Follow up:** A linked list can be reversed either iteratively or recursively. Could you implement both?
+
 ---
 
 ##### Example 1 Visualization

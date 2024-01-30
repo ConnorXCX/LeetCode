@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import List, Optional
 
 
 # Definition for singly-linked list.
@@ -40,35 +40,24 @@ if __name__ == '__main__':
 
     class Test(unittest.TestCase):
 
-        def test_example_1(self):
+        def getSolutionAsList(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> List:
             solutionList = []
-            solutionListNodes = f(ListNode(1, ListNode(2, ListNode(4))), ListNode(1, ListNode(3, ListNode(
-                4))))
+            solutionListNodes = f(list1, list2)
 
             while solutionListNodes:
                 solutionList.append(solutionListNodes.val)
                 solutionListNodes = solutionListNodes.next
 
-            self.assertEqual(solutionList, [1, 1, 2, 3, 4, 4])
+            return solutionList
+
+        def test_example_1(self):
+            self.assertEqual(self.getSolutionAsList(ListNode(1, ListNode(2, ListNode(4))), ListNode(1, ListNode(3, ListNode(
+                4)))), [1, 1, 2, 3, 4, 4])
 
         def test_example_2(self):
-            solutionList = []
-            solutionListNodes = f(None, None)
-
-            while solutionListNodes:
-                solutionList.append(solutionListNodes.val)
-                solutionListNodes = solutionListNodes.next
-
-            self.assertEqual(solutionList, [])
+            self.assertEqual(self.getSolutionAsList(None, None), [])
 
         def test_example_3(self):
-            solutionList = []
-            solutionListNodes = f(None, ListNode(0))
-
-            while solutionListNodes:
-                solutionList.append(solutionListNodes.val)
-                solutionListNodes = solutionListNodes.next
-
-            self.assertEqual(solutionList, [0])
+            self.assertEqual(self.getSolutionAsList(None, ListNode(0)), [0])
 
     unittest.main()

@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import List, Optional
 
 
 # Definition for singly-linked list.
@@ -56,6 +56,16 @@ if __name__ == '__main__':
 
     class Test(unittest.TestCase):
 
+        def getSolutionAsList(self, lists: list[Optional[ListNode]]) -> List:
+            solutionList = []
+            solutionListNodes = f(lists)
+
+            while solutionListNodes:
+                solutionList.append(solutionListNodes.val)
+                solutionListNodes = solutionListNodes.next
+
+            return solutionList
+
         def test_example_1(self):
             # The linked-lists are:
             # [
@@ -65,37 +75,16 @@ if __name__ == '__main__':
             # ]
             # merging them into one sorted list:
             # 1->1->2->3->4->4->5->6
-
-            solutionList = []
-            solutionListNodes = f([ListNode(1, ListNode(4, ListNode(5))),
-                                   ListNode(1, ListNode(3, ListNode(4))),
-                                   ListNode(2, ListNode(6))])
-
-            while solutionListNodes:
-                solutionList.append(solutionListNodes.val)
-                solutionListNodes = solutionListNodes.next
-
-            self.assertEqual(solutionList, [
+            self.assertEqual(self.getSolutionAsList([ListNode(1, ListNode(4, ListNode(5))),
+                                                     ListNode(1, ListNode(
+                                                         3, ListNode(4))),
+                                                     ListNode(2, ListNode(6))]), [
                 1, 1, 2, 3, 4, 4, 5, 6])
 
         def test_example_2(self):
-            solutionList = []
-            solutionListNodes = f([None])
-
-            while solutionListNodes:
-                solutionList.append(solutionListNodes.val)
-                solutionListNodes = solutionListNodes.next
-
-            self.assertEqual(solutionList, [])
+            self.assertEqual(self.getSolutionAsList([None]), [])
 
         def test_example_3(self):
-            solutionList = []
-            solutionListNodes = f([])
-
-            while solutionListNodes:
-                solutionList.append(solutionListNodes.val)
-                solutionListNodes = solutionListNodes.next
-
-            self.assertEqual(solutionList, [])
+            self.assertEqual(self.getSolutionAsList([]), [])
 
     unittest.main()
