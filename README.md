@@ -65,7 +65,7 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 3. ✅ Merge Two Sorted Lists
 4. ✅ Merge K Sorted Lists
 5. ✅ Remove Nth Node from End of List
-6. 🟡 Reorder List
+6. ✅ Reorder List
 
 **Matrix**
 
