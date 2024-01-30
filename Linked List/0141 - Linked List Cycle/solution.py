@@ -32,32 +32,32 @@ if __name__ == '__main__':
 
     class Test(unittest.TestCase):
 
-        def getListNodes(self, values: list[int], pos: int) -> Optional[ListNode]:
+        def getListNodes(self, values: list[int], pos: int) -> list[ListNode]:
             nodes = [ListNode(v) for v in values]
 
-            for node, nextNode in zip(nodes, nodes[1:] + nodes[pos:pos+1]):
+            for node, nextNode in zip(nodes, nodes[1:] + nodes[pos:pos + 1]):
                 node.next = nextNode
 
-            return nodes[0]
+            return nodes
 
         def test_example_1(self):
             # Input: head = [3,2,0,-4], pos = 1
             # Output: true
             # Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
             self.assertEqual(
-                f(self.getListNodes([3, 2, 0, -4], 1)), True)
+                f(self.getListNodes([3, 2, 0, -4], 1)[0]), True)
 
         def test_example_2(self):
             # Input: head = [1,2], pos = 0
             # Output: true
             # Explanation: There is a cycle in the linked list, where the tail connects to the 0th node.
             self.assertEqual(
-                f(self.getListNodes([1, 2], 0)), True)
+                f(self.getListNodes([1, 2], 0)[0]), True)
 
         def test_example_3(self):
             # Input: head = [1], pos = -1
             # Output: false
             # Explanation: There is no cycle in the linked list.
-            self.assertEqual(f(self.getListNodes([1], -1)), False)
+            self.assertEqual(f(self.getListNodes([1], -1)[0]), False)
 
     unittest.main()
