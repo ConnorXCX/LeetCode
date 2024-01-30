@@ -32,6 +32,7 @@ if __name__ == '__main__':
 
     class Test(unittest.TestCase):
 
+        # https://stackoverflow.com/questions/66012561/about-leetcode-question-linked-list-cycle-python
         def getListNodes(self, values: list[int], pos: int) -> list[ListNode]:
             nodes = [ListNode(v) for v in values]
 
