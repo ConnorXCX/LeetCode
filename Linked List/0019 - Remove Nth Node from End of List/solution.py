@@ -9,11 +9,24 @@ class ListNode:
 
 
 class Solution:
-    # Time Complexity:  TBD
-    # Space Complexity: TBD
+    # Time Complexity:  O(n) - two pointers technique.
+    # Space Complexity: O(1)
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+        # Empty node at the beginning of the Linked List for reference later.
+        stubNode = ListNode(0, head)
+        left, right = stubNode, head
 
-        pass
+        while n > 0 and right:
+            right = right.next
+            n -= 1
+
+        while right:
+            left = left.next  # type: ignore
+            right = right.next
+
+        left.next = left.next.next  # type: ignore
+
+        return stubNode.next
 
 
 if __name__ == '__main__':
