@@ -14,13 +14,13 @@ class Solution:
         # Use two pointers to track current node and previous node.
         # Time Complexity:  O(n)
         # Space Complexity: O(1)
-        # previous, current = None, head
+        previous, current = None, head
 
-        # while current:
-        #     next = current.next
-        #     current.next = previous
-        #     previous = current
-        #     current = next
+        while current:
+            next = current.next
+            current.next = previous
+            previous = current
+            current = next
 
         # return previous
 
