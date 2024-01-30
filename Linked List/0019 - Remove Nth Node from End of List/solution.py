@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import List, Optional
 
 
 # Definition for singly-linked list.
@@ -36,19 +36,31 @@ if __name__ == '__main__':
 
     class Test(unittest.TestCase):
 
+        def getSolutionAsList(self, list: Optional[ListNode], n: int) -> List:
+            solutionList = []
+            solutionListNodes = f(list, n)
+
+            while solutionListNodes:
+                solutionList.append(solutionListNodes.val)
+                solutionListNodes = solutionListNodes.next
+
+            return solutionList
+
         def test_example_1(self):
             # Input: head = [1,2,3,4,5], n = 2
             # Output: [1,2,3,5]
-            self.assertEqual(f(), None)
+            self.assertEqual(self.getSolutionAsList(ListNode(1, ListNode(
+                2, ListNode(3, ListNode(4, ListNode(5))))), 2), [1, 2, 3, 5])
 
         def test_example_2(self):
             # Input: head = [1], n = 1
             # Output: []
-            self.assertEqual(f(), None)
+            self.assertEqual(self.getSolutionAsList(ListNode(1), 1), [])
 
         def test_example_3(self):
             # Input: head = [1,2], n = 1
             # Output: [1]
-            self.assertEqual(f(), None)
+            self.assertEqual(self.getSolutionAsList(
+                ListNode(1, ListNode(2)), 1), [1])
 
     unittest.main()
