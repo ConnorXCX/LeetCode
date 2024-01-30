@@ -61,7 +61,7 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 **Linked List**
 
 1. ✅ Reverse Linked List
-2. 🟡 Linked List Cycle
+2. ✅ Linked List Cycle
 3. ✅ Merge Two Sorted Lists
 4. ✅ Merge K Sorted Lists
 5. 🟡 Remove Nth Node from End of List
