@@ -16,14 +16,17 @@ class Solution:
         stubNode = ListNode(0, head)
         left, right = stubNode, head
 
+        # Offset right pointer to get to nth from end of list.
         while n > 0 and right:
             right = right.next
             n -= 1
 
+        # Move both pointers forward until right hits end of list.
         while right:
             left = left.next  # type: ignore
             right = right.next
 
+        # Delete node in front of left pointer.
         left.next = left.next.next  # type: ignore
 
         return stubNode.next
