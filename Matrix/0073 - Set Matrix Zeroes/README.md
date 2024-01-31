@@ -4,6 +4,12 @@ Given an `m x n` integer matrix `matrix`, if an element is `0`, set its entire r
 
 You must do it [in place](https://en.wikipedia.org/wiki/In-place_algorithm).
 
+**Follow up:**
+
+- A straightforward solution using `O(mn)` space is probably a bad idea.
+- A simple improvement uses `O(m + n)` space, but still not the best solution.
+- Could you devise a constant space solution?
+
 ---
 
 ##### Example 1 Visualization
