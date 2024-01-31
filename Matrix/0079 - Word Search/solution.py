@@ -16,18 +16,15 @@ if __name__ == '__main__':
     class Test(unittest.TestCase):
 
         def test_example_1(self):
-            # Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
-            # Output: true
-            self.assertEqual(f(), None)
+            self.assertEqual(f([["A", "B", "C", "E"], ["S", "F", "C", "S"], [
+                             "A", "D", "E", "E"]], "ABCCED"), True)
 
         def test_example_2(self):
-            # Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "SEE"
-            # Output: true
-            self.assertEqual(f(), None)
+            self.assertEqual(f([["A", "B", "C", "E"], ["S", "F", "C", "S"], [
+                             "A", "D", "E", "E"]], "SEE"), True)
 
         def test_example_3(self):
-            # Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCB"
-            # Output: false
-            self.assertEqual(f(), None)
+            self.assertEqual(f([["A", "B", "C", "E"], ["S", "F", "C", "S"], [
+                             "A", "D", "E", "E"]], "ABCB"), False)
 
     unittest.main()
