@@ -4,6 +4,8 @@ Given an `m x n` grid of characters `board` and a string `word`, return `true` _
 
 The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once.
 
+**Follow up:** Could you use search pruning to make your solution faster with a larger board?
+
 ---
 
 ##### Example 1 Visualization
