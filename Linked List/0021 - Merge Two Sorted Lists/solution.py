@@ -51,13 +51,19 @@ if __name__ == '__main__':
             return solutionList
 
         def test_example_1(self):
+            # Input: list1 = [1,2,4], list2 = [1,3,4]
+            # Output: [1,1,2,3,4,4]
             self.assertEqual(self.getSolutionAsList(ListNode(1, ListNode(2, ListNode(4))), ListNode(1, ListNode(3, ListNode(
                 4)))), [1, 1, 2, 3, 4, 4])
 
         def test_example_2(self):
+            # Input: list1 = [], list2 = []
+            # Output: []
             self.assertEqual(self.getSolutionAsList(None, None), [])
 
         def test_example_3(self):
+            # Input: list1 = [], list2 = [0]
+            # Output: [0]
             self.assertEqual(self.getSolutionAsList(None, ListNode(0)), [0])
 
     unittest.main()
