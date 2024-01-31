@@ -3,7 +3,7 @@ from typing import List
 
 class Solution:
     # Time Complexity:  O(mn) - iterating over matrix at least once.
-    # Space Complexity: O(1) - use top row and left column to track zeroing of rows and columns in place, use a variable to track overlap cell in top left corner.
+    # Space Complexity: O(1) - use top row and left column to track zeroing of rows and columns in-place, use a variable to track overlap cell in top left corner.
     def setZeroes(self, matrix: List[List[int]]) -> List[List[int]]:
         rows, columns = len(matrix), len(matrix[0])
         rowZero = False
@@ -19,18 +19,18 @@ class Solution:
                     else:
                         rowZero = True
 
-        # Zero the rows and columns based on the in place values in top row and left column, excluding value at matrix origin.
+        # Zero the rows and columns based on the in-place values in top row and left column, excluding value at matrix origin.
         for r in range(1, rows):
             for c in range(1, columns):
                 if matrix[0][c] == 0 or matrix[r][0] == 0:
                     matrix[r][c] = 0
 
-        # Zero the first column based on the in place value at matrix origin.
+        # Zero the first column based on the in-place value at matrix origin.
         if matrix[0][0] == 0:
             for r in range(rows):
                 matrix[r][0] = 0
 
-        # Zero the first row based on the in place value of rowZero variable.
+        # Zero the first row based on the in-place value of rowZero variable.
         if rowZero:
             for c in range(columns):
                 matrix[0][c] = 0

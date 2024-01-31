@@ -3,7 +3,7 @@ from typing import List
 
 class Solution:
     # Time Complexity:  O(mn) - iterating over matrix at least once.
-    # Space Complexity: O(1) - in place operation, using four pointers / boundaries to track spiral position.
+    # Space Complexity: O(1) - in-place operation, using four pointers / boundaries to track spiral position.
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         result = []
         left, right, top, bottom = 0, len(matrix[0]), 0, len(matrix)
