@@ -100,7 +100,7 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 9. 🟡 Validate Binary Search Tree
 10. 🟡 Kth Smallest Element in a BST
 11. 🟡 Lowest Common Ancestor of a Binary Search Tree
-12. 🟡 Implement Trie (Prefix Tree)
+12. ✅ Implement Trie (Prefix Tree)
 13. 🟡 Design Add and Search Words Data Structure
 14. 🟡 Word Search II
 
