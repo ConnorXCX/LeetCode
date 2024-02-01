@@ -41,11 +41,11 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 
 **Graph**
 
-1. 🔴 Clone Graph
-2. 🔴 Course Schedule
-3. 🔴 Pacific Atlantic Water Flow
-4. 🔴 Number of Islands
-5. 🔴 Longest Consecutive Sequence
+1. 🟡 Clone Graph
+2. 🟡 Course Schedule
+3. 🟡 Pacific Atlantic Water Flow
+4. 🟡 Number of Islands
+5. 🟡 Longest Consecutive Sequence
 6. 🔴 Alien Dictionary (LeetCode Premium)
 7. 🔴 Graph Valid Tree (LeetCode Premium)
 8. 🔴 Number of Connected Components in an Undirected Graph (LeetCode Premium)
