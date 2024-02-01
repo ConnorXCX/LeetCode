@@ -46,17 +46,17 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 3. 🟡 Pacific Atlantic Water Flow
 4. 🟡 Number of Islands
 5. 🟡 Longest Consecutive Sequence
-6. 🔴 Alien Dictionary (LeetCode Premium)
-7. 🔴 Graph Valid Tree (LeetCode Premium)
-8. 🔴 Number of Connected Components in an Undirected Graph (LeetCode Premium)
+6. 🔴 Alien Dictionary (**_LeetCode Premium_**)
+7. 🔴 Graph Valid Tree (**_LeetCode Premium_**)
+8. 🔴 Number of Connected Components in an Undirected Graph (**_LeetCode Premium_**)
 
 **Interval**
 
 1. ✅ Insert Interval
 2. ✅ Merge Intervals
 3. ✅ Non-overlapping Intervals
-4. 🔴 Meeting Rooms (LeetCode Premium)
-5. 🔴 Meeting Rooms II (LeetCode Premium)
+4. 🔴 Meeting Rooms (**_LeetCode Premium_**)
+5. 🔴 Meeting Rooms II (**_LeetCode Premium_**)
 
 **Linked List**
 
@@ -85,7 +85,7 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 7. 🔴 Valid Palindrome
 8. 🔴 Longest Palindromic Substring
 9. 🔴 Palindromic Substrings
-10. 🔴 Encode and Decode Strings (LeetCode Premium)
+10. 🔴 Encode and Decode Strings (**_LeetCode Premium_**)
 
 **Tree**
 
