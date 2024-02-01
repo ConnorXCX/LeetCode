@@ -66,10 +66,10 @@ if __name__ == '__main__':
     class Test(unittest.TestCase):
 
         def test_example_1(self):
-            self.assertEqual(f([["o", "a", "a", "n"], ["e", "t", "a", "e"], ["i", "h", "k", "r"], [
-                             "i", "f", "l", "v"]], ["oath", "pea", "eat", "rain"]), ["eat", "oath"])
+            self.assertEqual(f([['o', 'a', 'a', 'n'], ['e', 't', 'a', 'e'], ['i', 'h', 'k', 'r'], [
+                             'i', 'f', 'l', 'v']], ['oath', 'pea', 'eat', 'rain']), ['eat', 'oath'])
 
         def test_example_2(self):
-            self.assertEqual(f([["a", "b"], ["c", "d"]], ["abcb"]), [])
+            self.assertEqual(f([['a', 'b'], ['c', 'd']], ['abcb']), [])
 
     unittest.main()

@@ -53,27 +53,27 @@ if __name__ == '__main__':
     import unittest
 
     # Input
-    # ["Trie", "insert", "search", "search", "startsWith", "insert", "search"]
-    # [[], ["apple"], ["apple"], ["app"], ["app"], ["app"], ["app"]]
+    # ['Trie', 'insert', 'search', 'search', 'startsWith', 'insert', 'search']
+    # [[], ['apple'], ['apple'], ['app'], ['app'], ['app'], ['app']]
     # Output
     # [null, null, true, false, true, null, true]
 
     obj = Trie()
-    obj.insert("apple")
+    obj.insert('apple')
 
     class Test(unittest.TestCase):
 
         def test_example_1(self):
-            self.assertEqual(obj.search("apple"), True)
+            self.assertEqual(obj.search('apple'), True)
 
         def test_example_2(self):
-            self.assertEqual(obj.search("app"), False)
+            self.assertEqual(obj.search('app'), False)
 
         def test_example_3(self):
-            self.assertEqual(obj.startsWith("app"), True)
+            self.assertEqual(obj.startsWith('app'), True)
 
         def test_example_4(self):
-            obj.insert("app")
-            self.assertEqual(obj.search("app"), True)
+            obj.insert('app')
+            self.assertEqual(obj.search('app'), True)
 
     unittest.main()
