@@ -53,7 +53,7 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 **Interval**
 
 1. ✅ Insert Interval
-2. 🟡 Merge Intervals
+2. ✅ Merge Intervals
 3. 🟡 Non-overlapping Intervals
 4. 🔴 Meeting Rooms (LeetCode Premium)
 5. 🔴 Meeting Rooms II (LeetCode Premium)
