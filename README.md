@@ -76,15 +76,15 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 
 **String**
 
-1. 🔴 Longest Substring Without Repeating Characters
-2. 🔴 Longest Repeating Character Replacement
-3. 🔴 Minimum Window Substring
-4. 🔴 Valid Anagram
-5. 🔴 Group Anagrams
-6. 🔴 Valid Parentheses
-7. 🔴 Valid Palindrome
-8. 🔴 Longest Palindromic Substring
-9. 🔴 Palindromic Substrings
+1. 🟡 Longest Substring Without Repeating Characters
+2. 🟡 Longest Repeating Character Replacement
+3. 🟡 Minimum Window Substring
+4. 🟡 Valid Anagram
+5. 🟡 Group Anagrams
+6. 🟡 Valid Parentheses
+7. 🟡 Valid Palindrome
+8. 🟡 Longest Palindromic Substring
+9. 🟡 Palindromic Substrings
 10. 🔴 Encode and Decode Strings (**_LeetCode Premium_**)
 
 **Tree**
