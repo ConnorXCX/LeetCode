@@ -31,8 +31,8 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 2. 🔴 Coin Change
 3. 🔴 Longest Increasing Subsequence
 4. 🔴 Longest Common Subsequence
-5. 🔴 Word Break Problem
-6. 🔴 Combination Sum
+5. 🔴 Word Break
+6. 🔴 Combination Sum IV
 7. 🔴 House Robber
 8. 🔴 House Robber II
 9. 🔴 Decode Ways
