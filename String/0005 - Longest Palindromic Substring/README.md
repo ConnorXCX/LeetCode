@@ -1,4 +1,3 @@
-# Longest Substring Without Repeating Characters
+# Longest Palindromic Substring
 
-Given a string `s`, find the length of the **longest
-substring**, a contiguous non-empty sequence of characters within a string, without repeating characters.
+Given a string `s`, return _the longest **palindromic substring**_ in `s`. A substring is a contiguous non-empty sequence of characters within a string.
