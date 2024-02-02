@@ -1,25 +1,28 @@
 class Solution:
     # Time Complexity:  TBD
     # Space Complexity: TBD
-    def characterReplacement(self, s: str, k: int) -> int:
+    def lengthOfLongestSubstring(self, s: str) -> int:
         pass
 
 
 if __name__ == '__main__':
     import unittest
 
-    f = Solution().characterReplacement
+    f = Solution().lengthOfLongestSubstring
 
     class Test(unittest.TestCase):
 
         def test_example_1(self):
-            # Explanation: Replace the two 'A's with two 'B's or vice versa.
-            self.assertEqual(f('ABAB', 2), 4)
+            # Explanation: The answer is 'abc', with the length of 3.
+            self.assertEqual(f('abcabcbb'), 3)
 
         def test_example_2(self):
-            # Explanation: Replace the one 'A' in the middle with 'B' and form 'AABBBBA'.
-            # The substring 'BBBB' has the longest repeating letters, which is 4.
-            # There may exists other ways to achieve this answer too.
-            self.assertEqual(f('AABABBA', 1), 4)
+            # Explanation: The answer is 'b', with the length of 1.
+            self.assertEqual(f('bbbbb'), 1)
+
+        def test_example_3(self):
+            # Explanation: The answer is 'wke', with the length of 3.
+            # Notice that the answer must be a substring, 'pwke' is a subsequence and not a substring.
+            self.assertEqual(f('pwwkew'), 3)
 
     unittest.main()

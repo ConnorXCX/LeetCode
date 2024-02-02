@@ -1,5 +1,4 @@
-# Longest Repeating Character Replacement
+# Longest Substring Without Repeating Characters
 
-You are given a string s and an integer k. You can choose any character of the string and change it to any other uppercase English character. You can perform this operation at most k times.
-
-Return the length of the longest substring containing the same letter you can get after performing the above operations.
+Given a string `s`, find the length of the **longest
+substring**, a contiguous non-empty sequence of characters within a string, without repeating characters.
