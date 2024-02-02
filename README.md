@@ -46,9 +46,9 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 3. 🟡 Pacific Atlantic Water Flow
 4. 🟡 Number of Islands
 5. 🟡 Longest Consecutive Sequence
-6. 🔴 Alien Dictionary (**_LeetCode Premium_**)
-7. 🔴 Graph Valid Tree (**_LeetCode Premium_**)
-8. 🔴 Number of Connected Components in an Undirected Graph (**_LeetCode Premium_**)
+6. 🟡 Alien Dictionary (**_LeetCode Premium_**)
+7. 🟡 Graph Valid Tree (**_LeetCode Premium_**)
+8. 🟡 Number of Connected Components in an Undirected Graph (**_LeetCode Premium_**)
 
 **Interval**
 
