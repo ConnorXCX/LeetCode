@@ -55,8 +55,8 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 1. ✅ Insert Interval
 2. ✅ Merge Intervals
 3. ✅ Non-overlapping Intervals
-4. 🔴 Meeting Rooms (**_LeetCode Premium_**)
-5. 🔴 Meeting Rooms II (**_LeetCode Premium_**)
+4. 🟡 Meeting Rooms (**_LeetCode Premium_**)
+5. 🟡 Meeting Rooms II (**_LeetCode Premium_**)
 
 **Linked List**
 
@@ -85,7 +85,7 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 7. 🟡 Valid Palindrome
 8. 🟡 Longest Palindromic Substring
 9. 🟡 Palindromic Substrings
-10. 🔴 Encode and Decode Strings (**_LeetCode Premium_**)
+10. 🟡 Encode and Decode Strings (**_LeetCode Premium_**)
 
 **Tree**
 
