@@ -6,7 +6,7 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 
 **Array**
 
-1. ✅ Two Sum
+1. ✅ [Two Sum](./Array/0001%20-%20Two%20Sum/README.md)
 2. ✅ Best Time to Buy and Sell Stock
 3. ✅ Contains Duplicate
 4. ✅ Product of Array Except Self
