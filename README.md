@@ -78,7 +78,7 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 
 1. 🟡 [Longest Substring Without Repeating Characters](./String/0003%20-%20Longest%20Substring%20Without%20Repeating%20Characters/)
 2. 🟡 [Longest Repeating Character Replacement](./String/0424%20-%20Longest%20Repeating%20Character%20Replacement/)
-3. 🟡 [Minimum Window Substring](./String/0076%20-%20Minimum%20Window%20Substring/)
+3. ✅ [Minimum Window Substring](./String/0076%20-%20Minimum%20Window%20Substring/)
 4. 🟡 [Valid Anagram](./String/0242%20-%20Valid%20Anagram/)
 5. 🟡 [Group Anagrams](./String/0049%20-%20Group%20Anagrams/)
 6. 🟡 [Valid Parentheses](./String/0020%20-%20Valid%20Parentheses/)
