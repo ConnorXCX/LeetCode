@@ -55,8 +55,8 @@ Collection of Python solutions to LeetCode Blind 75 questions.
 1. ✅ [Insert Interval](./Interval/0057%20-%20Insert%20Interval/)
 2. ✅ [Merge Intervals](./Interval/0056%20-%20Merge%20Intervals/)
 3. ✅ [Non-overlapping Intervals](./Interval/0435%20-%20Non-overlapping%20Intervals/)
-4. 🟡 [Meeting Rooms (**_LeetCode Premium_**)](./Interval/0252%20-%20Meeting%20Rooms/)
-5. 🟡 [Meeting Rooms II (**_LeetCode Premium_**)](./Interval/0253%20-%20Meeting%20Rooms%20II/)
+4. ✅ [Meeting Rooms (**_LeetCode Premium_**)](./Interval/0252%20-%20Meeting%20Rooms/)
+5. ✅ [Meeting Rooms II (**_LeetCode Premium_**)](./Interval/0253%20-%20Meeting%20Rooms%20II/)
 
 **Linked List**
 
