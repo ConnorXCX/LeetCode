@@ -2,10 +2,19 @@ from typing import List
 
 
 class Solution:
-    # Time Complexity:  TBD
+    # Time Complexity:  O(nlogn) - O(nlogn) to sort array based on start time and O(n) to iterate through sorted array; overall complexity is O(nlogn).
     # Space Complexity: TBD
     def canAttendMeetings(self, intervals: List[List[int]]) -> bool:
-        pass
+        intervals.sort(key=lambda i: i[0])
+
+        for interval in range(1, len(intervals)):
+            previousInterval = intervals[interval - 1]
+            currentInterval = intervals[interval]
+
+            if previousInterval[-1] > currentInterval[0]:
+                return False
+
+        return True
 
 
 if __name__ == '__main__':
